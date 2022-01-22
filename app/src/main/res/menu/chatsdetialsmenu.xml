@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/groupInfomenuitem"
+        android:title="Group Info"
+        app:showAsAction="never"
+
+        />
+
+    <item
+        android:id="@+id/wallpapermenuitem"
+        android:title="Wallpaper"
+        app:showAsAction="never"
+
+        />
+
+    <item
+        android:id="@+id/searchmenuitem"
+        android:title="Search"
+        app:showAsAction="never"
+
+        />
+    <item
+        android:id="@+id/moremenuitem"
+        android:title="More"
+        app:showAsAction="never"
+
+        />
+
+</menu>

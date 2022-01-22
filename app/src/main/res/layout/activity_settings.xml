@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".SettingsActivity">
+
+    <ImageView
+        android:id="@+id/profilebackarrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_arrow" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileActivitiesimageview"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="96dp"
+        android:src="@mipmap/ic_launcher"
+        app:civ_border_color="@color/colorPrimary"
+
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.583"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/profileActivitiesimageview"
+        app:layout_constraintEnd_toEndOf="@+id/profileActivitiesimageview"
+        app:layout_constraintStart_toStartOf="@+id/profileActivitiesimageview"
+        app:layout_constraintTop_toBottomOf="@+id/profileActivitiesimageview"
+        app:srcCompat="@drawable/addicon" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This Activity is Incomplete"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/floatingActionButton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

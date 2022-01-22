@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grayBackground"
+    android:id="@+id/signupActivityMainLinearLayout"
+    tools:context=".SignUpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+
+        >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/ic_whatsapp" />
+
+        <EditText
+            android:id="@+id/signupusernameedtid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@color/white"
+            android:hint="User Name"
+            android:inputType="textPersonName"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/signupemailedtid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/signuppassedtid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="12dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="2"
+
+            >
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:padding="7dp"
+                android:textColor="@color/black"
+                android:text="NOTE :- Password length should be greater then six" />
+
+            <TextView
+                android:id="@+id/alreadyacounttvid"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="7dp"
+                android:text="Already Have Account"
+                android:layout_marginLeft="5dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/signupbuttonid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign up"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            app:cornerRadius="8dp"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+
+            >
+
+            <Button
+                android:id="@+id/signupgooglebtnid"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:backgroundTint="@color/white"
+                android:drawableLeft="@drawable/ic_google"
+                android:padding="8dp"
+                android:text="Google"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:cornerRadius="8dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/signupwithphonetvid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="sign up with phone"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimary"/>
+ <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Note:- To make chats with friends login/signup with Gmail/google account"
+            android:textSize="10sp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
